@@ -5,6 +5,6 @@ branches:
     - master
 build: off
 install:
-  - java -jar ./artifacts/app-mbank.jar &
+  - java -jar ./artifacts/app-card-delivery.jar &
 build_script:
   - ./gradlew test --info
