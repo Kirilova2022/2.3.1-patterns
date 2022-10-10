@@ -6,5 +6,7 @@ branches:
 build: off
 install:
   - java -jar ./artifacts/app-card-delivery.jar &
+before_build:
+  chmod +x gradlew
 build_script:
   ./gradlew test --info "-Dselenide.headless=true"
